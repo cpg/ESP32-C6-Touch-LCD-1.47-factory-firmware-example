@@ -187,9 +187,8 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_LV_LOGO_W
 };
 
 const lv_img_dsc_t lv_logo_wx = {
-  .header.cf = LV_IMG_CF_RGB565A8,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.cf = LV_COLOR_FORMAT_RGB565A8,
+  .header.reserved_2 = 0,
   .header.w = 80,
   .header.h = 80,
   .data_size = 19200,

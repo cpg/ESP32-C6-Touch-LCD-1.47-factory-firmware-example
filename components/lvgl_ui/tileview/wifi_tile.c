@@ -1,4 +1,6 @@
 
+#include <string.h>
+
 #include "wifi_tile.h"
 
 #include "bsp_wifi.h"

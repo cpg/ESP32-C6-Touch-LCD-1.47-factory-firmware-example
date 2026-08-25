@@ -1,3 +1,5 @@
+#include <string.h>
+
 #include "image_tile.h"
 
 
@@ -24,7 +26,7 @@ void read_bin_files(const char *dir_path)
         return;
     }
     char filename[MAX_FILENAME_LENGTH];
-    while (lv_fs_dir_read(&dir, filename) == LV_FS_RES_OK && filename[0] != '\0')
+    while (lv_fs_dir_read(&dir, filename, sizeof(filename)) == LV_FS_RES_OK && filename[0] != '\0')
     {
         printf("Checking file: %s\n", filename);
         if (is_bin_file(filename))
