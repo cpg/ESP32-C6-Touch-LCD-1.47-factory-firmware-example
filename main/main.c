@@ -204,7 +204,7 @@ static void touch_test(void)
     if (lvgl_port_lock(0))
     {
         lable = lv_label_create(lv_scr_act());
-        lv_label_set_text(lable, "Touch testing mode \nExit with BOOT button");
+        lv_label_set_text(lable, "Touch testing mode 2\nExit with BOOT button");
         lv_obj_center(lable);
         lvgl_port_unlock();
     }
